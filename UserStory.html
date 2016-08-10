@@ -1,0 +1,151 @@
+
+<!DOCTYPE html>
+<!-- A website by Daniel De Sousa -->
+<!-- contact  -->
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>3Health</title>
+	<link rel="icon" href="img/Logo(new).png">
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/stylish-portfolio.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+	
+	<link href="themes/4/js-image-slider.css" rel="stylesheet" type="text/css" />
+    <script src="themes/4/js-image-slider.js" type="text/javascript"></script>
+	<link href="themes/1/js-image-slider.css" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" href="main.css">
+   
+
+</head>
+
+<body>
+
+    <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>User Story</h2>
+                            <hr class="star-primary">
+                            <img src="img/OW1.jpg" class="img-responsive img-centered" alt="">
+							<br>
+							<strong>A Patient Companion App…</strong>
+                            <p>Our patient companion app will not only allow physicians to provide personalized information and recommendations to their patients, but will also allow patients to learn at their own time and pace, to track their symptoms and monitor their progress so that they stay engaged and motivated.</p>
+							<strong>The User Experience</strong>
+                            <p>Our vision is for the user to experience a continuous cycle of growth and improvement in their illness knowledge and management. The app will have functions that reinforce positive health behaviours and motivate the user to continue to improve using action planning from the knowledge that they gain through personalized recommendations and self-learning.</p>
+							<strong>Positive Scenario: Improving the Illness Narratives</strong>
+							<p>During Emily’s first visit to her rheumatologist, Emily is told about her new diagnosis and about the importance of monitoring her symptoms and making some lifestyle changes. After talking to her for a while, Emily’s rheumatologist introduces her to 3Health’s My RA Companion app. He suggests that she uses this tool to learn more and help make the necessary lifestyle changes.</p>
+                            <p>Going home overwhelmed and not sure what she should do next, Emily puts her worries aside and makes dinner for herself and her husband. Emily sits down after dinner and decides to use the 3Health app. She opens the app and watches the recommended videos telling her more about her illness.</p>
+							<p>Over the next few days, Emily continues to read more and continue watching videos, learning more about RA, the treatment options that are available to her, and some of the coping strategies that she could use to reduce the burden of her illness. Feeling more motivated, Emily uses the app to create an action plan that will begin to help her improve her diet.</p>
+							<p>As she begins to use the 3Health app as a part of her daily routine, Emily begins using the symptom-tracking feature to report her condition and monitor her symptoms.</p>
+							<p>Emily learns about each measure of health that will be used by her rheumatologist to monitor her condition and chart her progress. Emily over time will be able to track her progress on her own and see the impact that her lifestyle changes and medication has on her condition.</p>
+							<p>With continued use of the 3Health app, Emily is following her treatment plan well and has made healthy lifestyle changes. She is motivated to learn about her illness and as a result is successfully managing her symptoms well. Her condition is improving, and she has begun to be able to be more active and resume more of the daily activities she had stopped doing. Emily is happier and knows she has the ability to improve her illness narrative.</p>
+							<strong>How the app would help patients…</strong>
+							<p>The app would help patients who are overwhelmed become more confident in their abilities to learn about their illness, improve their lifestyle, and feel better. Tailored educational materials will allow them to not only learn about their illness, but have a greater depth of understanding in how treatments work to allow them to have a greater role in choosing their treatment plan. With the ability to track symptoms and track their condition, patients are able to see their progress and will stay better motivated to continue their positive efforts to improve their overall outcomes.</p>
+							<strong><div class="div1"><h2>Emily's Experience</h2></strong></div>
+							<!-- *************Edit Images name below here***************-- -->
+							<div id="sliderFrame">
+								<div id="slider">
+									<img src="images/Slide1.jpg" />
+									</a>
+									<img src="images/Slide2.jpg" />
+									<img src="images/Slide3.jpg" />
+									<img src="images/Slide4.jpg" />
+									<img src="images/Slide5.jpg" />
+									<img src="images/Slide6.jpg" />
+									<img src="images/Slide7.jpg" />
+									<img src="images/Slide8.jpg" />
+								</div>
+								
+								
+								<!--Custom navigation buttons on both sides-->
+								<div class="group1-Wrapper">
+									<a onclick="imageSlider.previous()" class="group1-Prev"></a>
+									<a onclick="imageSlider.next()" class="group1-Next"></a>
+								</div>
+								<!--nav bar-->
+								<div style="text-align:center;padding:20px;z-index:20;">
+									<a onclick="imageSlider.previous()" class="group2-Prev"></a>
+									<a id='auto' onclick="switchAutoAdvance()"></a>
+									<a onclick="imageSlider.next()" class="group2-Next"></a>
+								</div>
+							</div>
+
+							<script type="text/javascript">
+								//The following script is for the group 2 navigation buttons.
+								function switchAutoAdvance() {
+									imageSlider.switchAuto();
+									switchPlayPauseClass();
+								}
+								function switchPlayPauseClass() {
+									var auto = document.getElementById('auto');
+									var isAutoPlay = imageSlider.getAuto();
+									auto.className = isAutoPlay ? "group2-Pause" : "group2-Play";
+									auto.title = isAutoPlay ? "Pause" : "Play";
+								}
+								switchPlayPauseClass();
+							</script>
+                            <a href="javascript:history.back()"><center><button type="button" class="btn btn-default"><i class="fa fa-times"></i> Close</button></center></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+<br>
+<br>
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Custom Theme JavaScript -->
+    <script>
+    // Closes the sidebar menu
+    $("#menu-close").click(function(e) {
+        e.preventDefault();
+        $("#sidebar-wrapper").toggleClass("active");
+    });
+
+    // Opens the sidebar menu
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#sidebar-wrapper").toggleClass("active");
+    });
+
+    // Scrolls to the selected menu item on the page
+    $(function() {
+        $('a[href*=#]:not([href=#])').click(function() {
+            if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
+
+                var target = $(this.hash);
+                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                if (target.length) {
+                    $('html,body').animate({
+                        scrollTop: target.offset().top
+                    }, 1000);
+                    return false;
+                }
+            }
+        });
+    });
+    </script>
+
+</body>
+
+</html>
+

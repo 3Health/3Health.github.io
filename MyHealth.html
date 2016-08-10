@@ -1,0 +1,114 @@
+
+<!DOCTYPE html>
+<!-- A website by Daniel De Sousa -->
+<!-- contact  -->
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>3Health</title>
+	<link rel="icon" href="img/Logo(new).png">
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/stylish-portfolio.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+	
+	
+
+</head>
+
+<body>
+
+    <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Education and Action Planning</h2>
+                            <hr class="star-primary">
+                            <img src="img/OW3.jpg" class="img-responsive img-centered">
+                            <br>
+							<strong>Current Methods of Patient Education are Overwhelming</strong>
+                            <p>One of the key issues experienced by patients with chronic disease, especially those recently diagnosed, is patient education on their illness and how best to manage it. When patients first go to specialist appointments they face an overwhelming amount of information about their condition and the potential treatment options that are available to them. They are not able to learn and retain all the important information presented to them. Therefore, a lot of education needs to take place outside the office and at the patients’ own pace. Currently, physicians have to rely on recommending online resources and pamphlets, but the information these resources provide is not personalized and is still overwhelming.</p>
+							<strong><h2>FEATURE: EDUCATION AND ACTION PLANNING</h2></strong>
+							<!--<ul>
+							<li><strong>Recommendations: </strong>Personalized recommendations from application and healthcare professional</li>
+							<li><strong>Self-Learning: </strong>User learns more about their illness and medication options, and about healthy lifestyles with tailored educational materials</li>
+							<li><strong>Creating an Action Plan: </strong>Tailored action plan can be developed to help make lifestyle changes</li>
+							<li><strong>Following the Plan: </strong>Application will remind user to follow their plan and will track their status</li>
+							<li><strong>Evaluation: </strong>User performance is evaluated and education and action plan are updated</li>
+							</ul>-->
+							<img src="img/Slide31.png" height="60%" width="60%" align="left">
+							<img src="img/Slide32.png" height="60%" width="60%" align="right">
+							<img src="img/Slide33.png" height="60%" width="60%" align="left">
+							<img src="img/Slide34.png" height="60%" width="60%" align="right">
+							<img src="img/Slide35.png" height="60%" width="60%" align="left">
+                        </div>
+                    </div>
+                </div>
+            </div>
+			 <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+							<a href="javascript:history.back()"><center><button type="button"  class="btn btn-default"><i class="fa fa-times"></i> Close</button></center></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+<br>
+<br>
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script>
+    // Closes the sidebar menu
+    $("#menu-close").click(function(e) {
+        e.preventDefault();
+        $("#sidebar-wrapper").toggleClass("active");
+    });
+
+    // Opens the sidebar menu
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#sidebar-wrapper").toggleClass("active");
+    });
+
+    // Scrolls to the selected menu item on the page
+    $(function() {
+        $('a[href*=#]:not([href=#])').click(function() {
+            if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
+
+                var target = $(this.hash);
+                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                if (target.length) {
+                    $('html,body').animate({
+                        scrollTop: target.offset().top
+                    }, 1000);
+                    return false;
+                }
+            }
+        });
+    });
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,111 @@
+
+<!DOCTYPE html>
+<!-- A website by Daniel De Sousa -->
+<!-- contact  -->
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>3Health</title>
+	<link rel="icon" href="img/Logo(new).png">
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/stylish-portfolio.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+
+</head>
+
+<body>
+
+    <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Symptom Tracking</h2>
+                            <hr class="star-primary">
+                            <img src="img/OW4.jpg" class="img-responsive img-centered" alt="">
+                            <br>
+                            <strong><h2>FEATURE: SYMPTOM TRACKING</h2></strong>
+							<!--<ul>
+							<li><strong>Visit Rheumatologist: </strong>The most important symptoms that need to be tracked are determined</li>
+							<li><strong>Learning about Symptoms: </strong>User learns more about their symptoms and the measures of health and begins to input symptom data as they go about their daily lives</li>
+							<li><strong>Reporting and Monitoring Progress: </strong>User is encouraged to view their health status and see their history to view progress and stay motivated to adhere to lifestyle changes</li>
+							<li><strong>Filling in Forms: </strong>Application will remind user to use symptom tracker and notify them of forms that need to be completed prior to visits</li>
+							<li><strong>Reassessment: </strong>Rheumatologist assesses forms, health status, and revaluates priorities for monitoring</li>
+							</ul>-->
+							<img src="img/Slide37.png" height="60%" width="60%" align="left">
+							<img src="img/Slide38.png" height="60%" width="60%" align="right">
+							<img src="img/Slide39.png" height="60%" width="60%" align="left">
+							<img src="img/Slide40.png" height="60%" width="60%" align="right">
+							<img src="img/Slide41.png" height="60%" width="60%" align="left">							
+                        </div>
+                    </div>
+                </div>
+            </div>
+			<div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+							<a href="javascript:history.back()"><center><button type="button"  class="btn btn-default"><i class="fa fa-times"></i> Close</button></center></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+<br>
+<br>
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script>
+    // Closes the sidebar menu
+    $("#menu-close").click(function(e) {
+        e.preventDefault();
+        $("#sidebar-wrapper").toggleClass("active");
+    });
+
+    // Opens the sidebar menu
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#sidebar-wrapper").toggleClass("active");
+    });
+
+    // Scrolls to the selected menu item on the page
+    $(function() {
+        $('a[href*=#]:not([href=#])').click(function() {
+            if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
+
+                var target = $(this.hash);
+                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                if (target.length) {
+                    $('html,body').animate({
+                        scrollTop: target.offset().top
+                    }, 1000);
+                    return false;
+                }
+            }
+        });
+    });
+    </script>
+
+</body>
+
+</html>
+
